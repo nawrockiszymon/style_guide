@@ -1,0 +1,33 @@
+$styleguide-sidebar-width: 12.5rem;
+
+$name: ".styleguide";
+
+.styleguide {
+    display: flex;
+    flex-direction: row;
+
+    #{&}__sidebar {
+        background-color: $white;
+        font-weight: $font-semi-bold;
+        width: $styleguide-sidebar-width;
+        height: 100vh;
+        // position: fixed;
+        // top: 0;
+    }
+    #{&}__content {
+        #{$name}__heading {
+            text-align: center;
+
+        }
+
+        #{$name}-section {
+            padding: ($spacing-3 * 2) 0 0 0;
+
+            #{$name}-section__demos {
+                background-color: $grey-cloud;
+
+            }
+        }
+    }
+    
+}
