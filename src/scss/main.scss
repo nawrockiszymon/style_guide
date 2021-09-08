@@ -1,9 +1,13 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now";
 
-@import "../global.scss";
+@import "../global";
+@import "./functions";
 // variables
-@import "./variables/colors.scss";
-@import "./variables/spacing.scss";
-@import "./variables/font.scss";
+@import "./variables/colors";
+@import "./variables/spacing";
+@import "./variables/font";
+@import "./variables/variables";
+@import "./components/colors";
+@import "./components/buttons";
 
-@import "./style-guide.scss";
+@import "./style-guide";
