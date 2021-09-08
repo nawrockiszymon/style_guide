@@ -38,12 +38,12 @@
     }
 }
 
-@mixin btn--brand--1 {
+@mixin btn--brand-1 {
     @include btn-solid;
 }
 
-.btn--brand--1 {
-    @include btn--brand--1;
+.btn--brand-1 {
+    @include btn--brand-1;
 }
 
 @mixin btn-hollow($color: $color-font, $color-border: currentColor, $color-hover: $gray-cement) {
