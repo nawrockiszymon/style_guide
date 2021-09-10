@@ -7,7 +7,13 @@
 @import "./variables/spacing";
 @import "./variables/font";
 @import "./variables/variables";
+
+
+//components
+@import "./components/spacing";
+@import "./components/font-icons";
+@import "./components/typography";
 @import "./components/colors";
 @import "./components/buttons";
-
+@import "./components/forms";
 @import "./style-guide";

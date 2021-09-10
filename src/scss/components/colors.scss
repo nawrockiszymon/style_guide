@@ -8,7 +8,7 @@ $colors-map: (
     "blue-aqua": $blue-aqua,
     "black": $black,
     "gray-coal": $gray-coal,
-    // "gray-lead": $gray-lead,
+    "gray-lead": $gray-lead,
     "gray-cement": $gray-cement,
     "gray-titanium": $gray-titanium,
     "gray-cloud": $gray-cloud,
@@ -23,7 +23,7 @@ $colors-map: (
         color: $color-value;
     }
 
-    .#{name}-bg {
+    .#{$name}-bg {
         background-color: $color-value;
     }
 }

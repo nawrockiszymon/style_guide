@@ -1,0 +1,36 @@
+$spacing-map: (
+    "spacing": $spacing,
+    "spacing-2": $spacing-2,
+    "spacing-3": $spacing-3,
+    "spacing-half": $spacing-half
+);
+@each $name, $value in $spacing-map {
+    .#{$name} {
+        padding: $value;
+
+    }
+
+    .#{$name}-h {
+        padding-left: $value;
+        padding-right: $value;
+    }
+
+    .#{$name}-v {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+
+    .#{$name}-l {
+        padding-left: $value;
+    }
+
+    .#{$name}-r {
+        padding-right: $value;
+    }
+    .#{$name}-t {
+        padding-top: $value;
+    }
+    .#{$name}-b {
+        padding-bottom: $value;
+    }
+}

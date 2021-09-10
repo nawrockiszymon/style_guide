@@ -9,13 +9,16 @@ $blue-aqua: #3e9cd0;
 
 $black: #000;
 $gray-coal: #222;
-$gray-graphit: #666;
+$gray-lead: #666;
 $gray-cement: #999;
 $gray-titanium: #aaa;
 $gray-cloud: #dadee8;
 $gray-mist: #f1f1f1;
 $white: #fff;
 
-$color-font: $gray-graphit;
+$color-font: $gray-lead;
 $color-font-h: $gray-coal;
 $color-font-light: $white;
+
+$color-input-placeholder: $gray-titanium;
+$color-input-border: $gray-cloud;
