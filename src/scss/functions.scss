@@ -1,8 +1,0 @@
-@use "sass:math";
-
-@function px-to-rem($value) {
-    @return math.div($value, 16) * 1rem;
-}
-@mixin px-to-rem-mixin($value, $property) {
-    #{$property}font-size: ($value/16) * 1rem;
-}

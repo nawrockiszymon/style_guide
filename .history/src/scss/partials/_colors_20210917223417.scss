@@ -1,0 +1,32 @@
+$colors-map: (
+  "brand-1": $brand-1,
+  "brand-1-light": $brand-1-light,
+  "brand-1-x-light": $brand-1-x-light,
+  "brand-2": $brand-2,
+  "brand-2-light": $brand-2-light,
+  "red-crimson": $red-crimson,
+  "blue-aqua": $blue-aqua,
+  "black": $black,
+  "gray-coal": $gray-coal,
+  "gray-lead": $gray-lead,
+  "gray-cement": $gray-cement,
+  "gray-titanium": $gray-titanium,
+  "gray-cloud": $gray-cloud,
+  "gray-mist": $gray-mist,
+  "white": $white,
+  "color-font": $color-font,
+  // "color-link": $color-link
+);
+
+@each $name, $color-value in $colors-map {
+  .#{$name} {
+    color: $color-value;
+  }
+
+  .#{$name}-bg {
+    background-color: $color-value;
+  }
+}
+.gray-coal {
+  display: inline;
+}

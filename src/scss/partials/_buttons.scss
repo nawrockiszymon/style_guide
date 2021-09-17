@@ -1,0 +1,135 @@
+@mixin btn_base {
+    border-radius: $border-radius-xl;
+    border: px-to-rem(1) solid;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    line-height: $line-height;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: $btn-padding-v $spacing-3;
+    // @include px-to-rem-mixin(30, font-size);
+
+    transition: $transition-linear;
+
+    &:hover {
+        transition: $transition-ease-in;
+    }
+}
+
+.btn {
+    @include btn_base;
+}
+@mixin btn-solid($color:$white, $color-bg:$brand-1, $color-bg-hover:$brand-1-light, $color-border:$color-bg) {
+    color: $color;
+    background-color: $color-bg;
+    border-color: $color-border;
+    box-shadow: $box-shadow;
+
+    &:hover {
+        color: $color;
+        background-color: $color-bg-hover;
+        border-color: $color-bg-hover;
+        
+    }
+}
+
+@mixin btn--brand-1 {
+    @include btn-solid;
+}
+
+.btn--brand-1 {
+    @include btn--brand-1;
+}
+
+@mixin btn-hollow($color: $color-font, $color-border: currentColor, $color-hover: $gray-cement) {
+    color: $color;
+    background-color: transparent;
+    border-color: $color-border;
+   
+    &:hover {
+      color: $color-hover;
+    }
+  }
+  
+  // Button: Hollow: Brand 1: Modifier
+  @mixin btn-hollow--brand-1 {
+    @include btn-hollow($color: $brand-1, $color-hover: $brand-1-light);
+  }
+  
+  .btn-hollow--brand-1 {
+    @include btn-hollow--brand-1;
+  }
+  
+  // Button: Hollow: Brand 2: Modifier
+  @mixin btn-hollow--brand-2 {
+    @include btn-hollow($color: $brand-2, $color-hover: $brand-2-light);
+  }
+  
+  .btn-hollow--brand-2 {
+    @include btn-hollow--brand-2;
+  }
+  
+  // Button: Hollow: White: Modifier
+  @mixin btn-hollow--white {
+    @include btn-hollow($color: $white, $color-hover: $gray-cloud);
+  }
+  
+  .btn-hollow--white {
+    @include btn-hollow--white;
+  }
+
+@mixin btn--brand-2 {
+    @include btn-solid($color-bg: $brand-2, $color-bg-hover: $brand-2-light);
+  }
+  
+  .btn--brand-2 {
+    @include btn--brand-2;
+  }
+
+  @mixin btn--sm {
+    font-size: $font-size-sm;
+    padding: $btn-padding-v-sm $spacing-3;
+  }
+  
+  .btn--sm {
+    @include btn--sm;
+  }
+  
+  // Button: Size: Extra Small
+  @mixin btn--xs {
+    font-size: $font-size-xs;
+    padding: $btn-padding-v-xsm ($spacing * 1.5);
+    line-height: 1.2;
+  }
+  
+  .btn--xs {
+    @include btn--xs;
+  }
+
+  @mixin btn-reset {
+    color: $color-font;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-regular;
+    line-height: $line-height;
+    text-align: left;
+    text-transform: inherit;
+    padding: 0;
+  
+    &:hover {
+      color: $color-font;
+      background: none;
+    }
+  }
+  .btn-reset {
+    @include btn-reset;
+  }

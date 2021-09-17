@@ -142,7 +142,7 @@
 .styleguide-code-inline {
   font-family: "Inconsolata", monospace;
   background-color: $white;
-  padding: 0 ($spacing-half * 0.5);
+  padding: 0 math.div($spacing-half, 2);
 }
 
 .styleguide-code-block {

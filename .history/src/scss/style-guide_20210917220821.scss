@@ -1,6 +1,5 @@
 @import "partials/functions";
 @import "partials/variables";
-
 .btn-styleguide-menu {
   border-radius: 0;
   height: $spacing-3;
@@ -142,7 +141,7 @@
 .styleguide-code-inline {
   font-family: "Inconsolata", monospace;
   background-color: $white;
-  padding: 0 ($spacing-half * 0.5);
+  padding: 0 ($spacing-half/2);
 }
 
 .styleguide-code-block {

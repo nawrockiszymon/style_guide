@@ -1,0 +1,32 @@
+$brand-1: #3abb8d;
+$brand-1-light: #75c8aa;
+$brand-1-x-light: #c7e9dd;
+$brand-2: #313c5a;
+$brand-2-light: #41568c;
+
+$red-crimson: #d05858;
+$blue-aqua: #3e9cd0;
+
+$black: #000;
+$gray-coal: #222;
+$gray-lead: #666;
+$gray-cement: #999;
+$gray-titanium: #aaa;
+$gray-cloud: #dadee8;
+$gray-mist: #f1f1f1;
+$white: #fff;
+
+$color-font: $gray-lead;
+$color-font-h: $gray-coal;
+$color-font-light: $white;
+
+$color-input-placeholder: $gray-titanium;
+$color-input-border: $gray-cloud;
+
+@mixin px-to-rem($px){
+    @return math.div($px, 16) * 1rem;"
+}
+
+@function (){
+ @return ;
+}
